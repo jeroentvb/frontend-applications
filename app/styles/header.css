@@ -1,8 +1,4 @@
-body {
-  font-family: system-ui;
-}
-
-header ul {
+ ul {
   list-style-type: none;
   padding-left: 0;
 }
