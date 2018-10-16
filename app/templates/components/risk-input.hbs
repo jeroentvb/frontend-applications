@@ -1,0 +1,26 @@
+<section>
+  <article class="category">
+    {{#each parsedData as |data|}}
+      <h3>{{data.Category}}</h3>
+      <div class="input">
+        <label for="{{data.Category}}">{{data.Category}}</label>
+        <select id="{{data.Category}}" name="{{data.Category}}">
+          {{#each data.Answers as |answer|}}
+            <option value="{{answer.Name}}">{{answer.Name}}</option>
+          {{/each}}
+        </select>
+      </div>
+    {{/each}}
+
+
+    {{!-- <h3>Categorie</h3>
+    <div class="input">
+      <label for="">Kop</label>
+      <select class="" name="" id="">
+        <option value="" disabled selected>Selecteer</option>
+      </select>
+    </div> --}}
+  </article>
+</section>
+
+{{yield}}
