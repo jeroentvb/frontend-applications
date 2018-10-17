@@ -58,3 +58,16 @@ main #search {
 .input label {
   margin-bottom: 0.5em;
 }
+
+section#risk-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#risk-cards article:nth-child(odd) {
+  grid-column: 1 / 1;
+}
+
+#risk-cards article:nth-child(even) {
+  grid-column: 2 / 2;
+}

@@ -345,7 +345,7 @@ var parsedData = [
   // }
 ]
 
-// Code van Martijn R, herschreven in mijn stijl
+// Code van Martijn Reeuwijk, herschreven in mijn stijl
 for (var i = 0; i < data.length; i++) {
 
   var check = true
@@ -370,6 +370,50 @@ for (var i = 0; i < data.length; i++) {
         'Weight': data[i].Weight,
       })
     }
+  }
+}
+
+var doubleParsedData = {
+  algemeen: new Array,
+  huishouding: new Array,
+  onderwijs: new Array,
+  sociaal: new Array,
+  strafrecht: new Array
+}
+
+for (var p = 0; p < parsedData.length; p++) {
+  switch (parsedData[p].Category) {
+    case 'Geslacht':
+    case 'Herkomst':
+    case 'Slachtoffer':
+    case 'Traject vooraf':
+      doubleParsedData.algemeen.push(parsedData[p])
+      break
+    case 'Type huishouden':
+    case 'Soort woning':
+      doubleParsedData.huishouding.push(parsedData[p])
+      break
+    case 'Voortijdig schoolverlaat':
+    case 'Soort onderwijs':
+    case 'Actueel onderwijs':
+    case 'Hoogst behaalde diploma vader':
+    case 'Hoogst behaalde diploma moeder':
+    case 'Verandering onderwijs nivau':
+      doubleParsedData.onderwijs.push(parsedData[p])
+      break
+    case 'Gescheiden ouders':
+    case 'Werk vader':
+    case 'werk moeder':
+    case 'Leeftijd vader':
+    case 'Leeftijd moeder':
+    case 'Leeftijdsverschil ouders':
+      doubleParsedData.sociaal.push(parsedData[p])
+      break
+    case 'Vader of moeder verdacht':
+    case 'Kind verdacht':
+    case 'Halt delict':
+      doubleParsedData.strafrecht.push(parsedData[p])
+      break
   }
 }
 
@@ -404,7 +448,8 @@ for (var i = 0; i < data.length; i++) {
 
 export default Route.extend({
   model() {
+    console.log(doubleParsedData)
     console.log(parsedData)
-    return parsedData
+    return doubleParsedData
   }
 });

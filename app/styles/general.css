@@ -15,6 +15,6 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --white: #ffffff;
-  --color-primary: #1B1464;
-  --color-secondary: #0652DD;
+  --color-primary: #0652DD;
+  --color-secondary: #222d32;
 }
