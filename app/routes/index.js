@@ -448,8 +448,6 @@ for (var p = 0; p < parsedData.length; p++) {
 
 export default Route.extend({
   model() {
-    console.log(doubleParsedData)
-    console.log(parsedData)
     return doubleParsedData
   }
 });

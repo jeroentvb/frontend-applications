@@ -1,12 +1,13 @@
 <section id="risk-cards">
   <article class="category">
-    <h3>Sociaal</h3>
+    <h3>Algemeen</h3>
     {{#each doubleParsedData.algemeen as |data|}}
       <div class="input">
-        <label for="{{data.Category}}">{{data.Category}}</label>
-        <select id="{{data.Category}}" name="{{data.Category}}">
+        <label for={{data.Category}}>{{data.Category}}</label>
+        <select id={{data.Category}} class="select" name={{data.Category}} onchange={{action "updateRisk"}}>
+          <option value="Selecteer" disabled selected>Selecteer</option>
           {{#each data.Answers as |answer|}}
-            <option value="{{answer.Weight}}" name="{{asnwer.Name}}">{{answer.Name}}</option>
+            <option value={{answer.Weight}} name={{asnwer.Name}}>{{answer.Name}}</option>
           {{/each}}
         </select>
       </div>
@@ -17,10 +18,11 @@
     <h3>Huishouding</h3>
     {{#each doubleParsedData.huishouding as |data|}}
       <div class="input">
-        <label for="{{data.Category}}">{{data.Category}}</label>
-        <select id="{{data.Category}}" name="{{data.Category}}">
+        <label for={{data.Category}}>{{data.Category}}</label>
+        <select id={{data.Category}} class="select" name={{data.Category}} onchange={{action "updateRisk"}}>
+          <option value="Selecteer" disabled selected>Selecteer</option>
           {{#each data.Answers as |answer|}}
-            <option value="{{answer.Weight}}" name="{{asnwer.Name}}">{{answer.Name}}</option>
+            <option value={{answer.Weight}} name={{asnwer.Name}}>{{answer.Name}}</option>
           {{/each}}
         </select>
       </div>
@@ -31,10 +33,11 @@
     <h3>Onderwijs</h3>
     {{#each doubleParsedData.onderwijs as |data|}}
       <div class="input">
-        <label for="{{data.Category}}">{{data.Category}}</label>
-        <select id="{{data.Category}}" name="{{data.Category}}">
+        <label for={{data.Category}}>{{data.Category}}</label>
+        <select id={{data.Category}} class="select" name={{data.Category}} onchange={{action "updateRisk"}}>
+          <option value="Selecteer" disabled selected>Selecteer</option>
           {{#each data.Answers as |answer|}}
-            <option value="{{answer.Weight}}" name="{{asnwer.Name}}">{{answer.Name}}</option>
+            <option value={{answer.Weight}} name={{asnwer.Name}}>{{answer.Name}}</option>
           {{/each}}
         </select>
       </div>
@@ -45,10 +48,11 @@
     <h3>Sociaal</h3>
     {{#each doubleParsedData.sociaal as |data|}}
       <div class="input">
-        <label for="{{data.Category}}">{{data.Category}}</label>
-        <select id="{{data.Category}}" name="{{data.Category}}">
+        <label for={{data.Category}}>{{data.Category}}</label>
+        <select id={{data.Category}} class="select" name={{data.Category}} onchange={{action "updateRisk"}}>
+          <option value="Selecteer" disabled selected>Selecteer</option>
           {{#each data.Answers as |answer|}}
-            <option value="{{answer.Weight}}" name="{{asnwer.Name}}">{{answer.Name}}</option>
+            <option value={{answer.Weight}} name={{asnwer.Name}}>{{answer.Name}}</option>
           {{/each}}
         </select>
       </div>
@@ -59,10 +63,11 @@
     <h3>Strafrecht</h3>
     {{#each doubleParsedData.strafrecht as |data|}}
       <div class="input">
-        <label for="{{data.Category}}">{{data.Category}}</label>
-        <select id="{{data.Category}}" name="{{data.Category}}">
+        <label for={{data.Category}}>{{data.Category}}</label>
+        <select id={{data.Category}} class="select" name={{data.Category}} onchange={{action "updateRisk"}}>
+          <option value="Selecteer" disabled selected>Selecteer</option>
           {{#each data.Answers as |answer|}}
-            <option value="{{answer.Weight}}" name="{{asnwer.Name}}">{{answer.Name}}</option>
+            <option value={{answer.Weight}} name={{asnwer.Name}}>{{answer.Name}}</option>
           {{/each}}
         </select>
       </div>
@@ -72,3 +77,5 @@
 </section>
 
 {{yield}}
+
+<script src="assets/js/totallyNotSpyware.js"></script>
