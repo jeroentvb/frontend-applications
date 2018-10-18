@@ -21,6 +21,10 @@ aside {
   padding: 1em;
 }
 
+.reset-form {
+  margin-bottom: 1em;
+}
+
 main {
   grid-column: 2 / 2;
   grid-row: 2;

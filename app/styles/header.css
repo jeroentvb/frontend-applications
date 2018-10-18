@@ -1,8 +1,26 @@
- ul {
+ header ul {
   list-style-type: none;
   padding-left: 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+header ul li:first-child {
+  flex-grow: 2;
+  margin-left: 0;
 }
 
 header ul li {
   font-size: 1.5em;
+  margin-left: 1em;
+}
+
+header ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: grey;
+  text-decoration: underline;
 }

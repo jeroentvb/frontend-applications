@@ -1,4 +1,4 @@
-window.onload = function () {
+(function () {
   if (localStorage.length != 0) {
     var selectedOptions = JSON.parse(localStorage.getItem('selectedOptions'))
     var htmlRisk = document.getElementById('risk')
@@ -10,4 +10,4 @@ window.onload = function () {
       element.selectedIndex = selectedOptions.index[i]
     }
   }
-}
+})()

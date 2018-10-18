@@ -8,7 +8,7 @@ export default Component.extend({
       if (localStorage.length != 0) {
         var selectedOptions = JSON.parse(localStorage.getItem('selectedOptions'))
       } else {
-        var selectedOptions = {
+        selectedOptions = {
           id: new Array,
           index: new Array,
           value: new Array,
