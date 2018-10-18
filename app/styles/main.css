@@ -1,6 +1,6 @@
 #container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: .8fr 3fr;
 }
 
 header {
@@ -61,14 +61,14 @@ main #search {
 
 section#risk-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1em;
 }
 
-#risk-cards article:nth-child(odd) {
+/* #risk-cards article:nth-child(odd) {
   grid-column: 1 / 1;
 }
 
 #risk-cards article:nth-child(even) {
   grid-column: 2 / 2;
-}
+} */
