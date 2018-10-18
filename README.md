@@ -1,54 +1,53 @@
-# risico-taxatie
+# 📈 Risico taxatie
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project calculates the risk a child has to be put out of their home to live somewhere else. It uses [ember.js](https://www.emberjs.com/).  
+My process can be found [here](process.md).
 
-## Prerequisites
+## 📋 Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+* [Ember CLI](https://ember-cli.com/) 
+* A browser 🌍
 
-## Installation
+## 💻 Installation
 
 * `git clone <repository-url>` this repository
 * `cd risico-taxatie`
-* `npm install`
+* `npm install`  
+If you are running into errors while installing on windows, you may need to run the following commands
+```
+npm config set user 0
+npm config set unsafe-perm true
+```
+You may also need to run `chmod 777` in the .nvm folder in your root directory. This gives npm rights to read and write there.
 
-## Running / Development
+## 🏃 Running / 🛠️ Development
 
-* `ember serve`
+* `ember serve` or `ember s` if you are lazy
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
+### ❌ Running Tests
 
 * `ember test`
 * `ember test --server`
 
-### Linting
+### ✅ Linting
 
 * `npm run lint:hbs`
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
 
-### Building
+### 👷 Building
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
+## 📚 Further Reading  / Useful Links 
 
 * [ember.js](https://emberjs.com/)
 * [ember-cli](https://ember-cli.com/)
