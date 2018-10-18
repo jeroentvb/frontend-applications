@@ -1,7 +1,7 @@
 # 📈 Risico taxatie
 
 This project calculates the risk a child has to be put out of their home to live somewhere else. It uses [ember.js](https://www.emberjs.com/).  
-My process can be found [here](process.md)
+My process can be found [here](process.md).
 
 ## 📋 Prerequisites
 
