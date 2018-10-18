@@ -11,7 +11,8 @@ export default Component.extend({
         var selectedOptions = {
           id: new Array,
           index: new Array,
-          value: new Array
+          value: new Array,
+          risk: Number
         }
       }
 
@@ -43,6 +44,16 @@ export default Component.extend({
           pushValues()
         }
       }
+
+      var riskFactor = 0
+      for (var x = 0; x < selectedOptions.value.length; x++) {
+        riskFactor += parseFloat((selectedOptions.value[x]).replace(',', '.'))
+      }
+
+      var risk = Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + riskFactor ) ) ) * 100 ).toFixed( 2 ) );
+
+      htmlRisk.textContent = risk
+      selectedOptions.risk = risk
 
       localStorage.setItem('selectedOptions', JSON.stringify(selectedOptions))
     }
