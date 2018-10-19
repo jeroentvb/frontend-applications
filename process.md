@@ -24,6 +24,8 @@ Toen ik de volgende dag op school kwam werd mij door de anderen die Ember hadden
 Ik had al een concept in mijn hoofd. Daar heb ik na het maken van de tutorial een schets van gemaakt.
 ![Conceptschets](conceptschets.jpg)
 Het idee is een rekentool die het risico op een uithuisplaatsing berekent. Factoren worden gesorteerd per categorie. Ook is er een zoekbalk waarmee zou je een factor moeten kunnen zoeken zodat je niet het hele formulier door moet zoeken. Ingevulde velden worden ook bewaard wanneer de pagina wordt herladen of een andere pagina wordt bezocht. Ook zegt de rekentool of een risicopercentage hoog is of niet.
+Verder zegt de applicatie welke vragen je in zou kunnen vullen om een beter beeld te krijgen, welke punten verbetering nodig hebben, maar ook wat al goed gaat.
+Idealiter zou je het formulier in een database op slaan zodat je voor meerdere mensen het formulier terug kan zetten naar de opgeslagen waarden, maar dit valt een buiten de scope voor nu. Mogelijk een goed idee voor een volgende sprint.
 
 ## 🛠️ Ontwikkeling
 Ik heb als eerst de statische structuur van mijn concept uitgewerkt en de basisconfiguratie van Ember gedaan. Dit was vrij makkelijk omdat Ember-cli command heeft om routes, componenten, helpers e.t.c. aan te maken. Je hoeft daarvoor dus zelf niks in te stellen wat ervoor zorgt dat je je alleen hoeft te focussen op het maken van je applicatie.
