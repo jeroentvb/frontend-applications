@@ -52,6 +52,7 @@ export default Component.extend({
         riskFactor += parseFloat(selectedOptions.value[x].replace(',', '.'));
       }
 
+      // Formule door Daniël, Tim en Volkert-Jan
       var risk = Number(
         ((1 / (1 + Math.exp(-1 * (-8.57219 + riskFactor)))) * 100).toFixed(2)
       );
