@@ -47,6 +47,6 @@ Toen was moesten de values opnieuw ingeladen worden. Dit heb ik gedaan door een 
 ### Opnieuw berekenen
 Als laatst moet het risico nog berekend worden. Die berekening heb ik toegevoegd aan het component dat de data ook in localSotrage opslaat. Toen de berekening werkte heb ik het uiteindelijke risico ook toegevoegd aan localStorage en gezorgd dat deze na het herladen van een pagina opnieuw ingeladen werd.
 
-## Terugblik 🥫
+## Terug🥫
 Ik vond het werken met een framework best lastig omdat er maar zo kort de tijd was om het een beetje goed te leren. Ik heb daarom bijvoorbeeld niet de data module van ember gebruikt, of de zoekfunctie werkend gemaakt.
 Wel vond ik het erg makkelijk dat je met ember-cli commands als `ember generate route about` kan gebruiken om routes/componenten/helpers e.t.c. aan te maken, zodat ik me kon focussen op het bouwen van mijn applicatie.
