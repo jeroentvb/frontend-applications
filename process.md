@@ -2,9 +2,10 @@
 Tekst over het proces
 
 ## Inhoud
-* [Framework](#framework)
-* [Concept](#concept)
-* [Ontwikkeling](#ontwikkeling)
+* Framework
+* Concept
+* Ontwikkeling
+* Terug 🥫
 
 ## 🖼️ Framework
 Als framwork heb ik mijn derde keus, [ember.js](https://www.emberjs.com/), toegewezen gekregen. Die hele dag heb ik besteed aan installeren van ember-cli. Dit bleek namelijk veel ingewikkelder dan gehoopt. Bij het lokaal en global installeren werden verschillende errors gegooid. Toen ik naar huis ging was het nog steeds niet gelukt.
