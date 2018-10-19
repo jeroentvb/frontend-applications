@@ -352,7 +352,7 @@ var parsedData = [
 for (var i = 0; i < data.length; i++) {
   var check = true;
   for (var x = 0; x < parsedData.length; x++) {
-    if (parsedData[x].Category === data[i].Category) {
+    if (parsedData[x].Category == data[i].Category) {
       check = false;
     }
   }
@@ -365,7 +365,7 @@ for (var i = 0; i < data.length; i++) {
   }
 
   for (var j = 0; j < parsedData.length; j++) {
-    if (parsedData[j].Category === data[i].Category) {
+    if (parsedData[j].Category == data[i].Category) {
       parsedData[j].Answers.push({
         // 'Coefficients': data[i].Coefficients,
         Name: data[i].Name,
@@ -374,6 +374,35 @@ for (var i = 0; i < data.length; i++) {
     }
   }
 }
+
+// My own code that doesn't work :(
+// var check = true
+//
+// for (var i = 0; i < data.length; i++) {
+//
+//   for (var x = 0; x < parsedData.length; x++) {
+//     if (data[i].Category == parsedData[x].Category) {
+//       parsedData[x].answers.push({
+//         answer: data[i].Name,
+//         weight: data[i].Weight
+//       })
+//
+//       check = false
+//     }
+//   }
+//
+//   if (check == true) {
+//     parsedData[i] = {
+//       Category: data[i].Category,
+//       answers: [
+//         {
+//           answer: data[i].Name,
+//           weight: data[i].Weight
+//         }
+//       ]
+//     }
+//   }
+// }
 
 var doubleParsedData = {
   algemeen: new Array(),
@@ -418,35 +447,6 @@ for (var p = 0; p < parsedData.length; p++) {
       break;
   }
 }
-
-// My own code that doesn't work :(
-// var check = true
-//
-// for (var i = 0; i < data.length; i++) {
-//
-//   for (var x = 0; x < parsedData.length; x++) {
-//     if (data[i].Category == parsedData[x].Category) {
-//       parsedData[x].answers.push({
-//         answer: data[i].Name,
-//         weight: data[i].Weight
-//       })
-//
-//       check = false
-//     }
-//   }
-//
-//   if (check == true) {
-//     parsedData[i] = {
-//       Category: data[i].Category,
-//       answers: [
-//         {
-//           answer: data[i].Name,
-//           weight: data[i].Weight
-//         }
-//       ]
-//     }
-//   }
-// }
 
 export default Route.extend({
   model() {
